@@ -7,9 +7,10 @@
 5 -> 1 0 1 1 0
 2
 """
-n = int(input('Введите количество монеток: '))
 
 from random import randint
+
+n = int(input('Введите количество монеток: '))
 
 coins = [randint(0,1) for i in range(n)]
 

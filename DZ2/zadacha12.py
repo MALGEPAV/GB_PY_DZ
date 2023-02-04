@@ -7,14 +7,20 @@
 4 4 -> 2 2
 5 6 -> 2 3
 """
-S = int(input('Введите X+Y=S: '))
-P = int(input('Введите X*Y=P: '))
-X,Y = 0, 0
-for i in range(1,S//2+1):
-    if i*(S-i)==P:
-        X,Y=i,S-i
-if X:
-    print(f'X={X}, Y={Y}')
-else:
-    print('Нет таких натуральных X и Y')
+# S = int(input('Введите X+Y=S: '))
+# P = int(input('Введите X*Y=P: '))
+# X,Y = 0, 0
+# for i in range(1,S//2+1):
+#     if i*(S-i)==P:
+#         X,Y=i,S-i
+# if X:
+#     print(f'X={X}, Y={Y}')
+# else:
+#     print('Нет таких натуральных X и Y')
 
+x = int(input())
+y = int(input())
+for i in range(x):
+    for j in range(y):
+        if x == i + j and y == i * j:
+            print(i, j)
